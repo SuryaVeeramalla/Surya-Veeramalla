@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    /* CSS code for styling the landing page */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Use a custom font from Google Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+    /* Set the font family and color for the whole page */
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
+
+    /* Create a header with a logo and a navigation menu */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #f44336;
+    }
+
+    .nav {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav li {
+      margin-left: 20px;
+    }
+
+    .nav li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .nav li a:hover {
+      color: #f44336;
+    }
+
+    /* Create a hero section with a headline, a subheadline, and a call to action button */
+    .hero {
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("https://img.freepik.com/free-photo/smartphone-with-small-grocery-cart_23-2147957626.jpg?w=740&t=st=1706263100~exp=1706263700~hmac=21e0c0a48ac5446ca2c3a4ff25528b1c439aa6c080816f5a235f19a8f02a7de9");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      text-align: center;
+      color: #1fd3e3;
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+
+    .hero-content button {
+      padding: 15px 25px;
+      border: none;
+      border-radius: 5px;
+      background-color: #f44336;
+      color: #030303;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .hero-content button:hover {
+      background-color: #e53935;
+    }
+
+    /* Create a section with columns to display some features or benefits */
+    .section {
+      padding: 40px;
+      background-color: #f0f0f0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    .section-content {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .column {
+      width: 25%;
+      text-align: center;
+    }
+
+    .column-icon {
+      font-size: 48px;
+      color: #f44336;
+      margin-bottom: 20px;
+    }
+
+    .column-title {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .column-desc {
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    /* Create a footer with some links and social media icons */
+    .footer {
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #f44336;
+    }
+
+    .footer-nav {
+      display: flex;
+      list-style: none;
+    }
+
+    .footer-nav li {
+      margin-left: 20px;
+    }
+
+    .footer-nav li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .footer-nav li a:hover {
+      color: #f44336;
+    }
+
+    .footer-social {
+      display: flex;
+      list-style: none;
+    }
+
+    .footer-social li {
+      margin-left: 20px;
+    }
+
+    .footer-social li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    .footer-social li a:hover {
+      color: #f44336;
+    }
+
+    /* Make the landing page responsive for smaller screens */
+    @media (max-width: 768px) {
+      .nav {
+        display: none;
+      }
+
+      .hero {
+        height: 60vh;
+      }
+
+      .hero-content h1 {
+        font-size: 32px;
+      }
+
+      .hero-content p {
+        font-size: 16px;
+      }
+
+      .section-content {
+        flex-direction: column;
+      }
+
+      .column {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+      }
+
+      .footer-nav {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header section -->
+  <div class="header">
+    <div class="logo">Landing Page </div>
+    <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero section -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Landing Page of <i>Sailcut</i></h1>
+      <p>This is a simple landing page to buy and sell anything 💰 .</p>
+      <button>Get Started</button>
+    </div>
+  </div>
+
+  <!-- Section with columns -->
+  <div class="section">
+    <div class="section-title">Why Choose Us?</div>
+    <div class="section-content">
+      <div class="column">
+        <div class="column-icon">🚀</div>
+        <div class="column-title">Lightning Logistics</div>
+        <div class="column-desc">You can get our most reliable way for Pickup and Deliver more Securely .</div>
+      </div>
+      <div class="column">
+        <div class="column-icon">☎️</div>
+        <div class="column-title">24/7 Customer Support</div>
+        <div class="column-desc">Thank you for choosing our products/services. We are always here to assist you with any questions &nbsp&nbspor concerns you may have.</div>
+      </div>
+      <div class="column">
+        <div class="column-icon">📝</div>
+        <div class="column-title">QualiCheck</div>
+        <div class="column-desc">QualiCheck is the ultimate service provide by Us. We do the quality check for you, so you can focus on the fun and convenience they bring.</div>
+      </div>
+      <div class="column">
+        <div class="column-icon">💰</div>
+        <div class="column-title">Easy and instant payments</div>
+        <div class="column-desc">You can get paid through UPI for Easy and Instant Payments</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">Landing Page</div>
+      <ul class="footer-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="footer-social">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
